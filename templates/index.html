@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Store</title>
+
+    <!--Lux Theme-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="{{ url_for('home') }}">Score Store</a>
+        
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+
+    <div class="scores">
+        {% for score in scores %}
+            <a href="{{ url_for('checkout', id=score.id) }}"><img src="{{ url_for('static', filename= score.image ) }}" alt="{{ score.name }}"></a>
+            <div class="score-title">
+                <h1>{{ score.title }}</h1>
+                <div class="score-info">
+                    <p><strong>{{ score.composer }}</strong></p>
+                    <p><strong>Edition:</strong> {{ score.edition }}</p>
+                    <p><strong>Pages:</strong> {{ score.pages }}</p>
+                    <p><strong>Description:</strong> {{ score.description }}</p>
+                    <p><strong>Price:</strong> {{ score.price }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
