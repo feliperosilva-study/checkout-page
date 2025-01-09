@@ -4,8 +4,16 @@ body {
 }
 
 .navbar {
-    height: 200px;
+    height: 250px;
     margin-bottom: 50px;
+    background-color: #2d2e32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 250px;
 }
 
 .scores {
