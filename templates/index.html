@@ -28,7 +28,7 @@
             <div class="score-item">
                 <a href="{{ url_for('checkout', id=score.id) }}"><img src="{{ url_for('static', filename= score.image ) }}" alt="{{ score.name }}" class="image"></a>
                 <div class="score-title">
-                    <h3>{{ score.composer }}</h3>
+                    <h3 class="composer">{{ score.composer }}</h3>
                     <h1><a href="{{ url_for('checkout', id=score.id) }}">{{ score.title }}</a></h1>
                     <div class="score-info">
                         <p><strong>Edition:</strong> {{ score.edition }}</p>

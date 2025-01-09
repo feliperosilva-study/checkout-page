@@ -1,6 +1,18 @@
 body {
     width: 100%;
     margin-bottom: 50px;
+    background-image: url(/static/img/background.png);
+    color: white;
+}
+
+body::after {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255, 0.8); /* Adjust this value for opacity */
+    z-index: -1; /* Ensure the overlay is behind the content */
 }
 
 .navbar {
@@ -43,6 +55,10 @@ body {
     width: 200px;
 }
 
+.composer {
+    color: #b77400;
+}
+
 .score-info strong {
     font-weight: 600;
 }
@@ -50,6 +66,7 @@ body {
 .score-info p {
     font-weight: 400;
     font-size: 15px;
+    color: black;
 }
 
 .price {
