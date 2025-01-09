@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.scores {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.score-content {
+    display: grid;    
+    row-gap: 70px;
+    column-gap: 50px;
+    font-family: "Roboto", serif;
+}
+
+.score-item {
+    display: grid;
+    grid-template-columns: 250px auto;
+    background-color: #e0e0de;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.image {
+    height: 260px;
+    width: 200px;
+}
+
+.score-info strong {
+    font-weight: 600;
+}
+
+.score-info p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    color: black;
+}

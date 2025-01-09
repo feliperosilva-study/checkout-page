@@ -1,0 +1,182 @@
+[
+    {
+        "image": "img/Bach1.jpg",
+        "title": "Well-Tempered Clavier, vol. 1",
+        "composer": "Johann Sebastian Bach",
+        "edition": "Bärenreiter Verlag",
+        "pages": 125,
+        "description": "Volume 1 of the Well-Tempered Clavier, based on the New Bach Edition, closely follows Bach's autograph score.",
+        "price": 22.95
+    },
+    {
+        "image": "img/Bach2.jpg",
+        "title": "Well-Tempered Clavier, vol. 2",
+        "composer": "Johann Sebastian Bach",
+        "edition": "Bärenreiter Verlag",
+        "pages": 163,
+        "description": "Volume 2 of the WTC has survived in two distinct manuscript traditions. Till now, all printed editions have combined these two traditions into a single hybrid edition.",
+        "price": 24.75
+    },
+    {
+        "image": "img/Beethoven1.jpg",
+        "title": "Piano Sonatas, vol. 1",
+        "composer": "Ludwig van Beethoven",
+        "edition": "Henle Verlag",
+        "pages": 286,
+        "description": "The first volume of Beethoven's iconic sonatas, showcasing his early and middle-period brilliance.",
+        "price": 42.50
+    },
+    {
+        "image": "img/Beethoven2.jpg",
+        "title": "Piano Sonatas, vol. 2",
+        "composer": "Ludwig van Beethoven",
+        "edition": "Henle Verlag",
+        "pages": 335,
+        "description": "The second volume of Beethoven's sonatas, highlighting his late-period mastery and innovation.",
+        "price": 44.50
+    },
+    {
+        "image": "img/Chopin1.jpg",
+        "title": "Ballades",
+        "composer": "Frédéric Chopin",
+        "edition": "Paredewski Edition",
+        "pages": 127,
+        "description": "All four of Chopin's dramatic and lyrical ballades in one collection.",
+        "price": 19.99
+    },
+    {
+        "image": "img/Chopin2.jpg",
+        "title": "Nocturnes",
+        "composer": "Frédéric Chopin",
+        "edition": "Paredewski Edition",
+        "pages": 185,
+        "description": "A complete collection of Chopin's enchanting and poetic nocturnes.",
+        "price": 22.95
+    },
+    {
+        "image": "img/Debussy1.jpg",
+        "title": "Préludes, Book 1",
+        "composer": "Claude Debussy",
+        "edition": "Alfred Masterwork",
+        "pages": 78,
+        "description": "The first volume of Debussy's impressionistic preludes, full of vivid colors and textures.",
+        "price": 17.95
+    },
+    {
+        "image": "img/Debussy2.jpg",
+        "title": "Préludes, Book 2",
+        "composer": "Claude Debussy",
+        "edition": "Alfred Masterwork",
+        "pages": 88,
+        "description": "The second volume of Debussy's preludes, exploring complex harmonies and delicate nuances.",
+        "price": 17.95
+    },
+    {
+        "image": "img/Liszt1.jpg",
+        "title": "Hungarian Rhapsody No. 2",
+        "composer": "Franz Liszt",
+        "edition": "Henle Verlag",
+        "pages": 24,
+        "description": "Liszt's virtuosic and dramatic Hungarian Rhapsody No. 2, showcasing his mastery of piano technique.",
+        "price": 12.99
+    },
+    {
+        "image": "img/Liszt2.jpg",
+        "title": "Sonata in B Minor",
+        "composer": "Franz Liszt",
+        "edition": "Henle Verlag",
+        "pages": 41,
+        "description": "Liszt's monumental Sonata in B Minor, a cornerstone of the romantic piano repertoire.",
+        "price": 17.99
+    },
+    {
+        "image": "img/Mozart1.jpg",
+        "title": "Piano Sonatas, vol. 1",
+        "composer": "Wolfgang Amadeus Mozart",
+        "edition": "Bärenreiter Verlag",
+        "pages": 222,
+        "description": "The first volume of Mozart's piano sonatas, full of elegance and clarity.",
+        "price": 39.90
+    },
+    {
+        "image": "img/Mozart2.jpg",
+        "title": "Piano Sonatas, vol. 2",
+        "composer": "Wolfgang Amadeus Mozart",
+        "edition": "Bärenreiter Verlag",
+        "pages": 240,
+        "description": "The second volume of Mozart's piano sonatas, showcasing his versatility and charm.",
+        "price": 39.90
+    },
+    {
+        "image": "img/Rach1.jpg",
+        "title": "Etudes-Tableaux",
+        "composer": "Sergei Rachmaninoff",
+        "edition": "Boosey and Hawkes",
+        "pages": 122,
+        "description": "A collection of Rachmaninoff's evocative Etudes-Tableaux, blending technical brilliance and rich emotion.",
+        "price": 15.49
+    },
+    {
+        "image": "img/Rach2.jpg",
+        "title": "Preludes for Piano",
+        "composer": "Sergei Rachmaninoff",
+        "edition": "Boosey and Hawkes",
+        "pages": 145,
+        "description": "A set of Rachmaninoff's Preludes, capturing a wide range of moods and textures.",
+        "price": 17.50
+    },
+    {
+        "image": "img/Schubert1.jpg",
+        "title": "Fantasy in C (Wanderer)",
+        "composer": "Franz Schubert",
+        "edition": "Bärenreiter Verlag",
+        "pages": 24,
+        "description": "Schubert's dramatic Fantasy in C, a work of lyrical beauty and emotional depth.",
+        "price": 14.50
+    },
+    {
+        "image": "img/Schubert2.jpg",
+        "title": "Impromptus",
+        "composer": "Franz Schubert",
+        "edition": "Bärenreiter Verlag",
+        "pages": 54,
+        "description": "A collection of Schubert's timeless Impromptus, full of lyricism and harmonic exploration.",
+        "price": 21.99
+    },
+    {
+        "image": "img/Schumann1.jpg",
+        "title": "Carnaval Op. 9",
+        "composer": "Robert Schumann",
+        "edition": "Peters",
+        "pages": 45,
+        "description": "Schumann's whimsical and expressive Carnaval, Op. 9, filled with character pieces.",
+        "price": 10.99
+    },
+    {
+        "image": "img/Schumann2.jpg",
+        "title": "Fantasy in C",
+        "composer": "Robert Schumann",
+        "edition": "Peters",
+        "pages": 62,
+        "description": "Schumann's expressive Fantasia in C, a deeply emotional and poetic masterpiece.",
+        "price": 13.50
+    },
+    {
+        "image": "img/Tchaikovsky1.jpg",
+        "title": "Six Pieces for Piano, Op. 19",
+        "composer": "Pyotr Ilyich Tchaikovsky",
+        "edition": "Henle Verlag",
+        "pages": 30,
+        "description": "A set of charming and emotional piano pieces by Tchaikovsky, showcasing his lyrical style.",
+        "price": 9.99
+    },
+    {
+        "image": "img/Tchaikovsky2.jpg",
+        "title": "The Seasons, Op. 37bis",
+        "composer": "Pyotr Ilyich Tchaikovsky",
+        "edition": "Henle Verlag",
+        "pages": 55,
+        "description": "Tchaikovsky's The Seasons, Op. 37bis, a cycle of evocative piano pieces reflecting each month of the year.",
+        "price": 12.99
+    }
+]

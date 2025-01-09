@@ -8,6 +8,11 @@
     <!--Lux Theme-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
 
+    <!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
@@ -23,19 +28,23 @@
     </div>
 
     <div class="scores">
-        {% for score in scores %}
-            <a href="{{ url_for('checkout', id=score.id) }}"><img src="{{ url_for('static', filename= score.image ) }}" alt="{{ score.name }}"></a>
-            <div class="score-title">
-                <h1>{{ score.title }}</h1>
-                <div class="score-info">
-                    <p><strong>{{ score.composer }}</strong></p>
-                    <p><strong>Edition:</strong> {{ score.edition }}</p>
-                    <p><strong>Pages:</strong> {{ score.pages }}</p>
-                    <p><strong>Description:</strong> {{ score.description }}</p>
-                    <p><strong>Price:</strong> {{ score.price }}</p>
+        <div class="score-content">
+            {% for score in scores %}
+            <div class="score-item">
+                <a href="{{ url_for('checkout', id=score.id) }}"><img src="{{ url_for('static', filename= score.image ) }}" alt="{{ score.name }}" class="image"></a>
+                <div class="score-title">
+                    <h3>{{ score.composer }}</h3>
+                    <a href="{{ url_for('checkout', id=score.id) }}"><h1>{{ score.title }}</h1></a>
+                    <div class="score-info">
+                        <p><strong>Edition:</strong> {{ score.edition }}</p>
+                        <p><strong>Pages:</strong> {{ score.pages }}</p>
+                        <p><strong>Description:</strong> {{ score.description }}</p>
+                        <p class="price">{{ "%.2f" | format(score.price) }}€</p>
+                    </div>
                 </div>
             </div>
-        {% endfor %}
+            {% endfor %}
+        </div>        
     </div>
     
 </body>
