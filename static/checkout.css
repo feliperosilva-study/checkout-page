@@ -5,7 +5,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
 }
 
 body::after {
@@ -29,4 +28,88 @@ body::after {
 
 .logo {
     height: 250px;
+}
+
+.buy-title {
+    font-family: "Roboto", serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.checkout-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    margin-left: 50px;
+    margin-right: 50px;    
+    font-family: "Roboto", serif;
+}
+
+.score, .payment {
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #e0e0de;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 260px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.composer {
+    color: #b77400;
+}
+
+.composer, .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.score-info strong {
+    font-weight: 600;
+}
+
+.score-info p {
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+}
+
+.payment {
+    font-family: "Roboto", serif;
+}
+
+.price {
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    color: black;
+}
+
+.form {
+    color: black;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.form input {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 300px;
+    border-radius: 4px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Store</title>
+    <link rel="icon" href="/static/img/logo-icon.jpeg">
 
     <!--Lux Theme-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
@@ -21,4 +22,37 @@
             <a class="navbar-brand" href="{{ url_for('home') }}"><img class="logo" src="/static/img/logo.png" alt="logo"></a>
         </nav>
     </div>
+
+    <h1 class="buy-title">Buy Score</h1>
+
+    <div class="checkout-details">
+        <div class="score">
+            <img class="image" src="{{ url_for('static', filename= score.image) }}" alt="{{ score.name }}">
+            <div>
+                <h3 class="composer">{{ score.composer }}</h3>
+                <h1 class="title">{{ score.title }}</h1>
+                <div class="score-info">
+                    <p><strong>Edition:</strong> {{ score.edition }}</p>
+                    <p><strong>Pages:</strong> {{ score.pages }}</p>
+                    <p><strong>Description:</strong> {{ score.description }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <h1>Total Price</h1>
+            <p class="price">{{ "%.2f" | format(score.price) }}€</p>
+            <form action="" class="form">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email">
+                <label for="address">Full Address (street, number, apt)</label>
+                <input type="text" class="form-control" id="address">
+                <label for="postcode">Postcode</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+            </form>
+            <button type="submit" class="btn btn-primary">Checkout</button>
+        </div>
+    </div>
+
 </body>
