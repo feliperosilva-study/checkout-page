@@ -2,6 +2,15 @@ from flask import Flask, render_template, url_for, redirect, flash, request
 from models import db, Scores
 import json
 
+import stripe
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
+
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../database/products.db'
 app.secret_key = 'my_checkout_page'
