@@ -14,3 +14,15 @@ class Scores(db.Model):
     pages = db.Column(db.Integer, nullable=False)
     description = db.Column(db.String(300), nullable=False)
     price = db.Column(db.Float, nullable=False)
+
+class Purchase(db.Model):
+    __tablename__ = 'purchase'
+
+    id = db.Column(db.Integer, primary_key=True)
+
+    fullname = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(100), nullable=False)
+    address = db.Column(db.String(300), nullable=False)
+    postcode = db.Column(db.String(20), nullable=False)
+    product_id = db.Column(db.Integer, db.ForeignKey('scores.id'), nullable=False)
+    quantity = db.Column(db.Integer, nullable=False)

@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    margin-bottom: 50px;
+    background-image: url(/static/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::after {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255, 0.8); /* Adjust this value for opacity */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+.navbar {
+    height: 250px;
+    margin-bottom: 50px;
+    background-color: #2d2e32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 250px;
+}
+
+h1 {
+    font-family: "Roboto", serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+h2 {
+    font-family: "Roboto", serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-right: auto;
+    margin-left: 50px;
+}

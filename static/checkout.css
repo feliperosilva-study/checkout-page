@@ -101,15 +101,15 @@ body::after {
 .form {
     color: black;
     font-weight: 400;
-    margin-bottom: 30px;
 }
 
-.form input {
+.form input, .form select {
     margin-bottom: 10px;
     border-radius: 4px;
 }
 
 .btn {
+    margin-top: 10px;
     width: 300px;
     border-radius: 4px;
 }
