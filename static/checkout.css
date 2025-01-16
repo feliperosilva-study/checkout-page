@@ -119,3 +119,169 @@ body::after {
     width: 300px;
     border-radius: 4px;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        height: 200px;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        height: 200px;
+    }
+
+    .buy-title {
+        font-size: 35px;
+    }
+
+    .checkout-details {
+        column-gap: 40px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    .score {
+        justify-content: flex-start;
+    }
+
+    .image {
+        width: 160px;
+        height: 200px;
+    }
+
+    .composer {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+    
+    .score-info strong {
+        font-weight: 600;
+    }
+    
+    .score-info p {
+        font-weight: 400;
+        font-size: 13px;
+        color: black;
+    }
+
+    .payment h1 {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 32px !important;
+    }
+
+    .form label {
+        font-size: small;
+    }
+
+    .form input {
+        height: 40px;
+    }
+
+}
+
+@media (max-width:767px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 25px;     
+    }
+
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        height: 200px;
+    }
+
+    .buy-title {
+        font-size: 35px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .checkout-details {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        justify-items: center;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .score, .payment {
+        padding: 20px;
+    }
+
+    .score {
+        width: 100% !important;
+        grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .image {
+        width: 100px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .composer {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .score-info p {
+        font-weight: 400;
+        font-size: 11px;
+        color: black;
+    }
+
+    .payment {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .payment h1 {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 32px !important;
+    }
+
+    .form label {
+        font-size: small;
+    }
+
+    .form input {
+        height: 40px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
