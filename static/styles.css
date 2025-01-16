@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
 
 body::after {
@@ -24,6 +25,12 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
@@ -105,4 +112,69 @@ body::after {
     font-size: 32px !important;
     font-weight: 800 !important;
     color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        height: 200px;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        height: 200px;
+    }
+
+    .catalogue {
+        font-size: 35px;
+    }
+    
+    .filter {
+        display: flex;
+    }
+    
+    .form-control {
+        width: 200px;
+        height: 38px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0;
+    }
+    
+    .btn {
+        width: 120px;
+        height: 38px;
+        text-align: center;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    .composer {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+    
+    .score-info strong {
+        font-weight: 600;
+    }
+    
+    .score-info p {
+        font-weight: 400;
+        font-size: 13px;
+        color: black;
+    }
+    
+    .price {
+        margin-top: 10px;
+        font-size: 26px !important;
+        font-weight: 800 !important;
+        color: black;
+    }
 }
