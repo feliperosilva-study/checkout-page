@@ -17,21 +17,24 @@ app.secret_key = 'my_checkout_page'
 
 db.init_app(app)
 
+# Helper function: loads the JSON file and add data to the database, if not existing
 def load_json_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
         for item in data:
             existing_score = Scores.query.filter((Scores.title == item['title']) & (Scores.composer == item['composer'])).first()
             if not existing_score:
-                score = Scores(**item)
+                score = Scores(**item) # unpacking the dictionary and transforming it in a Score instance
                 db.session.add(score)
         db.session.commit()
 
+# Main Function: Prepares app and initialize database
 def initialize_data():
     with app.app_context():
         db.create_all()
         load_json_data("data/seed_data.json")
 
+# Starts the process
 initialize_data()
 
 @app.route('/', methods=['GET', 'POST'])
@@ -75,7 +78,7 @@ def create_checkout_session():
     total_price = int(score.price * 100) #price in cents
 
     
-
+    # Create Stripe's checkout session
     try:
         checkout_session = stripe.checkout.Session.create(
             line_items=[
@@ -107,6 +110,8 @@ def create_checkout_session():
     except Exception as e:
         return str(e), 400
 
+    # Redirects the user to the Stripe checkout page using a GET request (HTTP 303) after form submission.
+    # The 303 status ensures that the user is redirected without resubmitting the form data.
     return redirect(checkout_session.url, code=303)
 
 @app.route('/success', methods=['GET'])
@@ -144,11 +149,10 @@ def success():
         else:
             return "Payment not completed or failed", 400
     except Exception as e:
-        return f"An error occurred: {str(e)}", 500
+        return f"An error occurred: {str(e)}", 500 # HTTP 500 Internal Server Error
 
 @app.route('/cancel')
-def cancel():
-    
+def cancel():    
     return render_template('cancel.html')
 
 
